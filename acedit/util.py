@@ -311,8 +311,8 @@ class Utilities:
                     'hs': 'ghc --make -O -dynamic -o ' + basename,
                     'py': None,
                     'rb': None,
-                    'c': 'gcc -static -DONLINE_JUDGE -fno-asm -lm -s -O2 -o ' + basename,
-                    'cpp': 'g++ -static -DONLINE_JUDGE -lm -s -x c++ -O2 -std=c++14 -o ' + basename,
+                    'c': '/usr/local/bin/gcc-9 -DONLINE_JUDGE -fno-asm -lm -O2 -o ' + basename,
+                    'cpp': '/usr/local/bin/g++-9 -DONLINE_JUDGE -lm -x c++ -O2 -std=c++14 -o ' + basename,
                     'java': 'javac -d .'
                 }[extension]
 
